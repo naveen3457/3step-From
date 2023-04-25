@@ -2,6 +2,8 @@ import { useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addUserContact } from "../redux/slice/userDetails";
 import { useNavigate } from "react-router-dom";
+import "../styles/userdetails.scss";
+
 
 const UserContact = () => {
     const dispatch = useDispatch();
@@ -23,18 +25,20 @@ const UserContact = () => {
     }
     return (
         <div>
-            <form ref={formRef}>
-                <div>
-                    <label htmlFor="phone"/>
+            <form className="usercontact-container" ref={formRef}>
+                <h1>USER CONTACT</h1>
+                <div className="labeldiv">
+                    <label>Phone:</label>
                     <input name="phone"/>
                 </div>
-                <h2>Address</h2>
+               
                 <div>
-                    <label htmlFor="address"/>
+                    <label>Address:</label>
                     <textarea name="address"/>
                 </div>
+                <span>
                 <button onClick={(e)=>handlePrev(e)}>Prev</button>
-                <button onClick={(e)=>handleNext(e)}>Next</button>
+                <button onClick={(e)=>handleNext(e)}>Next</button></span>
             </form>
         </div>
     )

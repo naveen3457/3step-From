@@ -1,0 +1,64 @@
+.userdetail-container , .usercontact-container, .usercred-container
+{
+    width: 25rem;
+    height: 35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+
+    div
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input
+    {
+        width: 10rem;
+        padding: 0.3rem 5rem 0.3rem 0.1rem;
+        border-radius: 0.5rem;
+        outline: none;
+        border: 2px solid rgba(165, 160, 160, 0.555);
+    }
+
+    input::placeholder
+    {
+        color: red;
+    }
+
+    label
+    {
+        font-size: 1.5rem;
+        font-weight: 700;
+        padding-right: 1rem;
+    }
+
+    select
+    {
+        padding:0.3rem 1rem;
+        border-radius: 0.5rem;
+        outline: none;
+    }
+
+    span
+    {
+        display: flex;
+        gap: 2rem;
+    }
+    button
+    {
+        padding: 0.3rem 1rem;
+        border-radius: 0.3rem;
+        outline: none;
+        border: none;
+        background-color: brown;
+        font-size: 1.2rem;
+        color: whitesmoke;
+    }
+}

@@ -1,0 +1,28 @@
+.card-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    background-color: rgb(71, 215, 167);
+    width: 25rem;
+    height: 35rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+
+    h1
+    {
+        text-align: center;
+        padding-left: 8rem;
+    }
+    h3
+    {
+        font-size: 1.3rem;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+    p
+    {
+        font-size: 1rem;
+    }
+}

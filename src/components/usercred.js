@@ -2,6 +2,8 @@ import { useEffect, useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addUserCreds } from "../redux/slice/userDetails";
 import { useNavigate } from "react-router-dom";
+import "../styles/userdetails.scss";
+
 
 const UserCreds = () => {
     const dispatch = useDispatch();
@@ -23,17 +25,19 @@ const UserCreds = () => {
 
     return (
         <div>
-            <form ref={formRef}>
+            <form className="usercred-container" ref={formRef}>
+                <h1>USER CRED</h1>
                 <div>
-                    <label htmlFor="email"/>
+                    <label>Email:</label>
                     <input name="email"/>
                 </div>
                 <div>
-                    <label htmlFor="password"/>
+                    <label>Password:</label>
                     <input  type="password" name="password"/>
                 </div>
+                <span>
                 <button onClick={(e)=>handlePrev(e)}>Prev</button>
-                <button onClick={(e)=>handleSubmit(e)}>Submit</button>
+                <button onClick={(e)=>handleSubmit(e)}>Submit</button></span>
             </form>
         </div>
     )

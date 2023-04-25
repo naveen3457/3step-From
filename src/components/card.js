@@ -1,13 +1,17 @@
 import React from 'react'
 import {Card as AntdCard} from "antd";
 import { useSelector } from 'react-redux';
+import "../styles/card.scss";
+
+
 export default function Card() {
     const userDetails = useSelector(state => state.UserDetails.userDetails)
     const userContact = useSelector(state => state.UserDetails.userContact)
     const userCreds = useSelector(state => state.UserDetails.userCreds)
   return (
     <div>
-        <AntdCard  title="User Details">
+        <AntdCard className="card-container">
+            <h1>CARD</h1>
             <h3>User Details</h3>
             <p>First Name: {userDetails && userDetails.fname||""}</p>
             <p>Last Name: {userDetails && userDetails.lname||""}</p>
